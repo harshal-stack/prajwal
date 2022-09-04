@@ -1,0 +1,17 @@
+h1{
+    font-family: 'Qwitcher Grypen', cursive;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 200px auto 0;
+    font-size: 4.5rem;
+    color: #f4a261;
+    opacity: 0.70;
+}
+h2{
+   
+    font-family:  'Poiret One', cursive;
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(165, 25, 25);
+    opacity: 0.70;
+}

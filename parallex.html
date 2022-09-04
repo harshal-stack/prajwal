@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="parallexstyle.css">
+    <title>parallex</title>
+    
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">logo</a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Details</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="stars.png" id="stars" alt="">
+        <img src="moon.png" id="moon" alt="">
+       <img src="mountains_behind.png" id="mountains_behind" alt=""> 
+       <h2  id="text">Moon Light</h2>
+        
+        <a href="#sec" id="btn">Explore</a>
+        <img   src="mountains_front.png" id="mountains_front" alt="">
+    </section>
+    <div class="sec" id="sec">
+        <h2>parallex scrolling</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis fugiat dolor incidunt, eaque temporibus eveniet provident tenetur minima in repellat iste explicabo et vero consequatur! Atque nam corrupti rem nulla nemo optio, iste assumenda vitae dolor impedit enim, provident perspiciatis! Ullam et aliquid architecto aspernatur facere? Vero, incidunt magni. Velit recusandae excepturi eos impedit perferendis consequuntur, aperiam ipsam aliquid a veritatis. Facilis provident asperiores aliquid tempore. Possimus in porro explicabo quibusdam et consectetur maiores quae, modi voluptatum numquam excepturi voluptates labore molestias temporibus corrupti magni itaque obcaecati autem aperiam reiciendis recusandae, iusto dolorem. Esse facere voluptatibus at minima porro quae!</p><br><br>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A architecto sequi ad dolore corrupti quia nobis sunt explicabo? Eveniet ipsam, velit aspernatur porro obcaecati eius minima voluptates iste aut culpa. Dolore facere delectus nobis aut unde aliquam qui esse maiores laudantium quos necessitatibus magnam debitis quis quo totam modi, quod voluptatibus bt<br><br>assumenda, at ullam accusantium. Praesentium ipsum quae nam tenetur error. Non id maxime, fugit beatae, maiores quasi ea tenetur dolor modi asperiores molestias corporis. Qui, quia doloribus? Dolores repellendus minus inventore ratione quo ea sint, distinctio veniam quam pariatur, omnis incidunt quis aperiam, voluptatibus voluptate expedita adipisci mollitia dignissimos?<br><br>assumenda, at ullam accusantium. Praesentium ipsum quae nam tenetur error. Non id maxime, fugit beatae, maiores quasi ea tenetur dolor modi asperiores molestias corporis. Qui, quia doloribus? Dolores repellendus minus inventore ratione quo ea sint, distinctio veniam quam pariatur, omnis incidunt quis aperiam, voluptatibus voluptate expedita adipisci mollitia dignissimos?<br><br>assumenda, at ullam accusantium. Praesentium ipsum quae nam tenetur error. Non id maxime, fugit beatae, maiores quasi ea tenetur dolor modi asperiores molestias corporis. Qui, quia doloribus? Dolores repellendus minus inventore ratione quo ea sint, distinctio veniam quam pariatur, omnis incidunt quis aperiam, voluptatibus voluptate expedita adipisci mollitia dignissimos?<br><br>assumenda, at ullam accusantium. Praesentium ipsum quae nam tenetur error. Non id maxime, fugit beatae, maiores quasi ea tenetur dolor modi asperiores molestias corporis. Qui, quia doloribus? Dolores repellendus minus inventore ratione quo ea sint, distinctio veniam quam pariatur, omnis incidunt quis aperiam, voluptatibus voluptate expedita adipisci mollitia dignissimos?<br><br>assumenda, at ullam accusantium. Praesentium ipsum quae nam tenetur error. Non id maxime, fugit beatae, maiores quasi ea tenetur dolor modi asperiores molestias corporis. Qui, quia doloribus? Dolores repellendus minus inventore ratione quo ea sint, distinctio veniam quam pariatur, omnis incidunt quis aperiam, voluptatibus voluptate expedita adipisci mollitia dignissimos?</p>
+    </div>
+
+    <script>
+        let stars = document.getElementById('stars'); 
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let text = documrnt.getElementById('text');
+        let btn = document.getElementById('btn');
+        let mountains_front = document.getElementById('mountains_front');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+           stars.style.left = value * 0.25 + 'px';
+           moon.style.top = value*1.05+'px';
+           mountains_behind.style.top=value*0.5+'px';
+           mountains_front.style.top=value*0+'px';
+           text.style.marginRight =value*4+'px';
+           text.style.marginTop = value*1.5+'px';
+           btn.style.marginTop=value*1.5+'px';
+           header.style.top= value*0.5+'px';
+        })
+    </script>
+</body>
+</html>
